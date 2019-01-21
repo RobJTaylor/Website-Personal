@@ -1,0 +1,92 @@
+body {
+    background-color: white;
+}
+
+.header {
+    position: fixed;
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.header h1 {
+    margin-top: 0;
+}
+
+.heading {
+    background-image: url("images/PinkCloud.jpeg");
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    line-height: 60vh;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    opacity: 0.7;
+}
+
+.stripe {
+    background-color: #44FFD1;
+    width: 110%;
+    transform: rotate(2deg);
+    min-height: 100vh;
+    margin-left: -5%;
+    margin-top: 0;
+}
+
+.stripe p {
+    color: #C5C6C7;
+}
+
+mark {
+    color: #EC93B1;
+    background: none;
+}
+
+mark.grey {
+    color: grey;
+}
+
+p {
+    font-size: 20px;
+}
+
+i {
+    font-size: 40px;
+    margin-right: 50px;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+table {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+a {
+    color: #EC93B1;
+}
+
+a:hover {
+    color: #EC93B1;
+}
+
+iframe {
+    display: block;
+}
