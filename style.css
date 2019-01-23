@@ -17,20 +17,21 @@ body {
 
 .heading {
     background-image: url("images/PinkCloud.jpeg");
+    background-repeat: no-repeat;
     background-position: center;
     height: 60vh;
     width: 100%;
     margin-top: 60px;
     margin-bottom: 50px;
-    line-height: 60vh;
+    line-height: 50vh;
     text-align: center;
 }
 
 .heading h1 {
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
     color: white;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .stripe {
