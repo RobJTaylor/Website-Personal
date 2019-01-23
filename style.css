@@ -34,19 +34,6 @@ body {
     opacity: 0.9;
 }
 
-.stripe {
-    background-color: #44FFD1;
-    width: 110%;
-    transform: rotate(2deg);
-    min-height: 100vh;
-    margin-left: -5%;
-    margin-top: 0;
-}
-
-.stripe p {
-    color: #C5C6C7;
-}
-
 mark {
     color: #EC93B1;
     background: none;
