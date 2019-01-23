@@ -87,6 +87,35 @@ a:hover {
     color: #EC93B1;
 }
 
+a:active {
+    color: black;
+}
+
 iframe {
     display: block;
+}
+
+#about {
+    display: block;
+    visibility: visible;
+}
+
+#skills {
+    display: none;
+    visibility: hidden;
+}
+
+#industry {
+    display: none;
+    visibility: hidden;
+}
+
+#projects {
+    display: none;
+    visibility: hidden;
+}
+
+#contact {
+    display: none;
+    visibility: hidden;
 }
