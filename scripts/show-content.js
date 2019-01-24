@@ -11,4 +11,24 @@ function showContent(id) {
     element.classList.add("a:active");
     element.style.display = 'block';
     element.style.visibility = 'visible';
+
+    var textElement = document.getElementById("headerText");
+
+    switch (id) {
+        case "about":
+            textElement.innerHTML = "Hi, I'm Rob Taylor";
+            break;
+        case "skills":
+            textElement.innerHTML = "My Skills";
+            break;
+        case "industry":
+            textElement.innerHTML = "Industry Experience";
+            break;
+        case "projects":
+            textElement.innerHTML = "Projects";
+            break;
+        case "contact":
+            textElement.innerHTML = "Contact Me";
+            break;
+    }
 }
