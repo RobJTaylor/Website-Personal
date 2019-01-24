@@ -1,12 +1,12 @@
 var skills = ['Java', 'C#', 'JavaScript', 'PHP', 'HTML', 'CSS', 'Python'];
 var count = 0;
-var animated = 0;
+var triggered = 0;
 
 function changeSkill() {
-    setInterval(updateText, 3000);
-
-    if (animated == 0) {
+    if (triggered == 0) {
+        setInterval(updateText, 2000);
         animateBars();
+        triggered = 1;
     }
 }
 
@@ -39,6 +39,4 @@ function animateBars() {
     $("#developmentMethodologies").animate({
         width: "90%"
     }, 1500)
-
-    animated = 1;
 }
