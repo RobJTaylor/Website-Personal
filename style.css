@@ -2,6 +2,15 @@ body {
     background-color: white;
 }
 
+#me {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #mainSkill {
     margin-bottom: 30px;
 }
