@@ -1,17 +1,22 @@
+var currentContent = "#about";
+
 function showContent(id) {
     elementIds = ['about', 'skills', 'industry', 'projects', 'contact'];
 
-    for (var elementId = 0; elementId < elementIds.length; elementId++) {
-        var element = document.getElementById(elementIds[elementId]);
+    /*for (var elementId = 0; elementId < elementIds.length; elementId++) {
+        $("." + elementIds[elementId]).fadeOut();
         element.style.display = 'none';
         element.style.visibility = 'hidden';
-    }
+    }*/
 
-    var element = document.getElementById(id);
-    element.classList.add("a:active");
-    element.style.display = 'block';
-    element.style.visibility = 'visible';
+    $(currentContent).fadeOut('fast', function () {
+        var newContent = $("#" + id);
+        newContent.addClass("a:active");
+        newContent.show();
+        $("#" + id).fadeIn('fast');
+    });
 
+    currentContent = "#" + id;
     var textElement = document.getElementById("headerText");
 
     switch (id) {
