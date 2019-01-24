@@ -20,6 +20,7 @@ function showContent(id) {
             break;
         case "skills":
             textElement.innerHTML = "My Skills";
+            changeSkill();
             break;
         case "industry":
             textElement.innerHTML = "Industry Experience";

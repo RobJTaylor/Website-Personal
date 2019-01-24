@@ -2,6 +2,14 @@ body {
     background-color: white;
 }
 
+#mainSkill {
+    margin-bottom: 30px;
+}
+
+.progress-bar {
+    background-color: #EC93B1 !important;
+}
+
 .header {
     position: fixed;
     background-color: white;
