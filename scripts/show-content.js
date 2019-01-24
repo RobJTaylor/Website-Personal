@@ -17,24 +17,24 @@ function showContent(id) {
     });
 
     currentContent = "#" + id;
-    var textElement = document.getElementById("headerText");
+    var textElement = $("#headerText");
 
     switch (id) {
         case "about":
-            textElement.innerHTML = "Hi, I'm Rob Taylor";
+            $("#headerText").html("Hi, I'm Rob Taylor");
             break;
         case "skills":
-            textElement.innerHTML = "My Skills";
+            $("#headerText").html("My Skills");
             changeSkill();
             break;
         case "industry":
-            textElement.innerHTML = "Industry Experience";
+            $("#headerText").html("Industry Experience");
             break;
         case "projects":
-            textElement.innerHTML = "Projects";
+            $("#headerText").html("Projects");
             break;
         case "contact":
-            textElement.innerHTML = "Contact Me";
+            $("#headerText").html("Contact Me");
             break;
     }
 }
