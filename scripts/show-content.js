@@ -3,12 +3,6 @@ var currentContent = "#about";
 function showContent(id) {
     elementIds = ['about', 'skills', 'industry', 'projects', 'contact'];
 
-    /*for (var elementId = 0; elementId < elementIds.length; elementId++) {
-        $("." + elementIds[elementId]).fadeOut();
-        element.style.display = 'none';
-        element.style.visibility = 'hidden';
-    }*/
-
     $(currentContent).fadeOut('fast', function () {
         var newContent = $("#" + id);
         newContent.addClass("a:active");
@@ -21,20 +15,35 @@ function showContent(id) {
 
     switch (id) {
         case "about":
-            $("#headerText").html("Hi, I'm Rob Taylor");
+            $("#headerText").fadeOut('fast', function () {
+                $("#headerText").html("Hi, I'm Rob Taylor");
+                $("#headerText").fadeIn('fast');
+            });
             break;
         case "skills":
-            $("#headerText").html("My Skills");
+            $("#headerText").fadeOut('fast', function () {
+                $("#headerText").html("My Skills");
+                $("#headerText").fadeIn('fast');
+            });
             changeSkill();
             break;
         case "industry":
-            $("#headerText").html("Industry Experience");
+            $("#headerText").fadeOut('fast', function () {
+                $("#headerText").html("Industry Experience");
+                $("#headerText").fadeIn('fast');
+            });
             break;
         case "projects":
-            $("#headerText").html("Projects");
+            $("#headerText").fadeOut('fast', function () {
+                $("#headerText").html("Projects");
+                $("#headerText").fadeIn('fast');
+            });
             break;
         case "contact":
-            $("#headerText").html("Contact Me");
+            $("#headerText").fadeOut('fast', function () {
+                $("#headerText").html("Contact Me");
+                $("#headerText").fadeIn('fast');
+            });
             break;
     }
 }
