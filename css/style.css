@@ -1,5 +1,6 @@
 body {
-    background-color: white;
+    background-color: black;
+    color: white;
 }
 
 #me {
@@ -16,16 +17,18 @@ body {
 }
 
 .progress-bar {
-    background-color: #EC93B1 !important;
+    background-color: #7E3465 !important;
 }
 
 .header {
     position: fixed;
-    background-color: white;
+    background-color: black;
     height: 60px;
     width: 100%;
     top: 0;
     overflow: hidden;
+    color: white;
+    z-index: 999;
 }
 
 .header h1 {
@@ -35,7 +38,8 @@ body {
 
 .footer {
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: black;
+    color: white;
     height: 40px;
     margin-top: 50px;
 }
@@ -48,14 +52,15 @@ body {
 }
 
 .heading {
-    background-image: url("images/PinkCloud.jpeg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/header-image.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 60vh;
+    height: 400px;
     width: 100%;
     margin-top: 60px;
     margin-bottom: 50px;
-    line-height: 50vh;
+    line-height: 300px;
     text-align: center;
 }
 
@@ -67,12 +72,12 @@ body {
 }
 
 mark {
-    color: #EC93B1;
+    color: #7E3465;
     background: none;
 }
 
 mark.grey {
-    color: grey;
+    color: white;
 }
 
 p {
@@ -100,15 +105,15 @@ h1 {
 }
 
 a {
-    color: #EC93B1;
+    color: #7E3465;
 }
 
 a:hover {
-    color: #EC93B1;
+    color: #7E3465;
 }
 
 a:active {
-    color: black;
+    color: white;
 }
 
 iframe {
