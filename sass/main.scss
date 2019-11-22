@@ -1,13 +1,48 @@
-// -- Bootstrap styling --
-$primary: #7E3465;
+// -- Light styling
+$body-bg: #FFFFFF;
+$body-color: #000000;
+$primary: #8683C7;
+$link-hover-color: darken($primary, 15%) !default;
 
+.heading {
+    background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url("../images/headerLight.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    line-height: 300px;
+    text-align: center;
+}
+// -- End light
+
+// -- Dark styling
+$body-bg: #000000;
+$body-color: #FFFFFF;
+$primary: #7E3465;
+$progress-bg: #282828;
+$link-hover-color: lighten($primary, 15%) !default;
+
+.heading {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/headerDark.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    line-height: 300px;
+    text-align: center;
+}
+// -- End dark
+
+// -- Bootstrap styling --
 $theme-colors: (
     "primary": $primary
 );
-
-//Main colours
-$body-bg: #000000;
-$body-color: #FFFFFF;
 
 //Fonts
 $font-size-base: 1.25rem;
@@ -22,7 +57,6 @@ $h1-font-size: $font-size-base * 2.2 !default;
 }
 
 //Link styles
-$link-hover-color: lighten($primary, 15%) !default;
 $link-hover-decoration: none !default;
 a {
     &:focus {
@@ -38,7 +72,6 @@ table {
 }
 
 //Progress bar styling
-$progress-bg: #282828;
 $progress-border-radius: 7px;
 
 //Mark styling
@@ -52,7 +85,7 @@ $mark-bg: none;
 // -- Non-Bootstrap styling --
 .header {
     position: fixed;
-    background-color: black;
+    background-color: $body-bg;
     height: 60px;
     width: 100%;
     top: 0;
@@ -61,21 +94,8 @@ $mark-bg: none;
 }
 
 .header p {
-    color: white;
+    color: $body-color;
     z-index: 999;
-}
-
-.heading {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/header-image.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 400px;
-    width: 100%;
-    margin-top: 60px;
-    margin-bottom: 50px;
-    line-height: 300px;
-    text-align: center;
 }
 
 .heading h1 {
@@ -100,7 +120,7 @@ $mark-bg: none;
 }
 
 mark {
-    color: #7E3465;
+    color: $primary;
     background: none;
 }
 

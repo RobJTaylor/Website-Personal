@@ -2,3 +2,6 @@
 *.jpeg
 images/me.jpg
 node_modules/*
+*.map
+darkTheme.scss
+lightTheme.scss
