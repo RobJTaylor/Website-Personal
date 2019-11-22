@@ -139,3 +139,7 @@ iframe {
 #contact {
     display: none;
 }
+
+.container {
+    min-height: 600px !important;
+}
