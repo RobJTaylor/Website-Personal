@@ -1,1 +1,133 @@
+// -- Bootstrap styling --
+$primary: #7E3465;
+
+$theme-colors: (
+    "primary": $primary
+);
+
+//Main colours
+$body-bg: #000000;
+$body-color: #FFFFFF;
+
+//Fonts
+$font-size-base: 1.25rem;
+$h1-font-size: $font-size-base * 2.2 !default;
+.nav-link {
+    font-size: $font-size-base / 0.75;
+}
+
+//Nav styling
+.nav {
+    padding-bottom: 30px;
+}
+
+//Link styles
+$link-hover-color: lighten($primary, 15%) !default;
+$link-hover-decoration: none !default;
+a {
+    &:focus {
+      color: lighten($primary, 15%);
+    }
+}
+
+//Table styling
+table {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//Progress bar styling
+$progress-bg: #282828;
+$progress-border-radius: 7px;
+
+//Mark styling
+$mark-bg: none;
+
+//Container styling
+.container {
+    min-height: 600px;
+}
+
+// -- Non-Bootstrap styling --
+.header {
+    position: fixed;
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.header p {
+    color: white;
+    z-index: 999;
+}
+
+.heading {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/header-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    line-height: 300px;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 60px;
+    text-align: center;
+    padding-top: 140px;
+}
+
+#mainSkill {
+    //The skill that changes in the skills section
+    margin-bottom: 30px;
+}
+
+#me {
+    //The picture of me on the about me section
+    display: block;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+mark {
+    color: #7E3465;
+    background: none;
+}
+
+i {
+    font-size: 40px;
+    margin-right: 50px;
+}
+
+//Content that needs to start hidden to work with nav
+#about {
+    display: block;
+}
+
+#skills {
+    display: none;
+}
+
+#industry {
+    display: none;
+}
+
+#projects {
+    display: none;
+}
+
+#contact {
+    display: none;
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
