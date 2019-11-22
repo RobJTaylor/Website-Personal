@@ -60,7 +60,7 @@ $h1-font-size: $font-size-base * 2.2 !default;
 $link-hover-decoration: none !default;
 a {
     &:focus {
-      color: lighten($primary, 15%);
+      color: $link-hover-color;
     }
 }
 
