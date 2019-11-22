@@ -1,3 +1,4 @@
 
 *.jpeg
 images/me.jpg
+node_modules/*

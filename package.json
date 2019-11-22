@@ -1,0 +1,22 @@
+{
+  "name": "website-personal",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobJTaylor/Website-Personal.git"
+  },
+  "author": "Robert Taylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RobJTaylor/Website-Personal/issues"
+  },
+  "homepage": "https://github.com/RobJTaylor/Website-Personal#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
