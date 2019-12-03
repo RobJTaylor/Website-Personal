@@ -20,6 +20,39 @@
   padding-bottom: 30px;
 }
 
+.nav-pills {
+  display: block;
+  text-align: center;
+}
+
+.nav-pills a {
+  /*background-color: $primary;*/
+  padding: 5px 10px 5px 10px;
+  /*margin: 5px;*/
+}
+
+.nav-pills .active {
+  background-color: #7E3465;
+}
+
+.nav-pills .active a {
+  color: #000000;
+}
+
+.nav-pills .left {
+  border: 2px solid #7E3465;
+  border-right: 1px solid #7E3465;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.nav-pills .right {
+  border: 2px solid #7E3465;
+  border-left: 1px solid #7E3465;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
 a:focus {
   color: #b44a90;
 }
@@ -95,6 +128,10 @@ i {
 }
 
 #contact {
+  display: none;
+}
+
+#software {
   display: none;
 }
 

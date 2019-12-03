@@ -56,6 +56,39 @@ $h1-font-size: $font-size-base * 2.2 !default;
     padding-bottom: 30px;
 }
 
+.nav-pills {
+    display: block;
+    text-align: center;
+}
+
+.nav-pills a {
+    /*background-color: $primary;*/
+    padding: 5px 10px 5px 10px;
+    /*margin: 5px;*/
+}
+
+.nav-pills .active {
+    background-color: $primary;
+}
+
+.nav-pills .active a {
+    color: $body-bg;
+}
+
+.nav-pills .left {
+    border: 2px solid $primary;
+    border-right: 1px solid $primary;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.nav-pills .right {
+    border: 2px solid $primary;
+    border-left: 1px solid $primary;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
 //Link styles
 $link-hover-decoration: none !default;
 a {
@@ -147,6 +180,10 @@ i {
 }
 
 #contact {
+    display: none;
+}
+
+#software {
     display: none;
 }
 
