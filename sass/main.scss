@@ -1,11 +1,11 @@
 // -- Light styling
 $body-bg: #FFFFFF;
 $body-color: #000000;
-$primary: #8683C7;
+$primary: #EAD1B3;
 $link-hover-color: darken($primary, 15%) !default;
 
 .heading {
-    background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url("../images/headerLight.jpg");
+    background-image: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7) ), url("../images/headerLight.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
