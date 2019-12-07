@@ -43,3 +43,11 @@ function queryTheme() {
         return "light";
     }
 }
+
+window.onload = function() {
+    //Set the moon to an outline if we've loaded in light theme
+    if (this.queryTheme() == "light") {
+        $("#themeToggle").removeClass("fas");
+        $("#themeToggle").addClass("far");
+    }
+}
