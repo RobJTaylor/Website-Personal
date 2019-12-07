@@ -30,7 +30,7 @@
 }
 
 .nav-pills .active {
-  background-color: #7D4C32;
+  background-color: #b46d48;
 }
 
 .nav-pills .active a {
@@ -38,15 +38,15 @@
 }
 
 .nav-pills .left {
-  border: 2px solid #7D4C32;
-  border-right: 1px solid #7D4C32;
+  border: 2px solid #b46d48;
+  border-right: 1px solid #b46d48;
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
 }
 
 .nav-pills .right {
-  border: 2px solid #7D4C32;
-  border-left: 1px solid #7D4C32;
+  border: 2px solid #b46d48;
+  border-left: 1px solid #b46d48;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
 }

@@ -66,7 +66,7 @@ $h1-font-size: $font-size-base * 2.2 !default;
 }
 
 .nav-pills .active {
-    background-color: $primary;
+    background-color: $link-hover-color;
 }
 
 .nav-pills .active a {
@@ -74,15 +74,15 @@ $h1-font-size: $font-size-base * 2.2 !default;
 }
 
 .nav-pills .left {
-    border: 2px solid $primary;
-    border-right: 1px solid $primary;
+    border: 2px solid $link-hover-color;
+    border-right: 1px solid $link-hover-color;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
 }
 
 .nav-pills .right {
-    border: 2px solid $primary;
-    border-left: 1px solid $primary;
+    border: 2px solid $link-hover-color;
+    border-left: 1px solid $link-hover-color;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
 }
