@@ -112,6 +112,11 @@ $progress-border-radius: 7px;
 //Mark styling
 $mark-bg: none;
 
+mark {
+    color: $link-hover-color;
+    background: none;
+}
+
 //Container styling
 .container {
     min-height: 600px;
@@ -152,11 +157,6 @@ $mark-bg: none;
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
-}
-
-mark {
-    color: $primary;
-    background: none;
 }
 
 i {
