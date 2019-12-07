@@ -4,22 +4,8 @@ function showContent(id) {
     elementIds = ['about', 'skills', 'industry', 'projects', 'contact'];
 
     if (id == "websites" || id == "software") {
-        switch (id) {
-            case "websites":
-                $('#software-button').removeClass('active');
-                $('#websites-button').addClass('active');
-                $('#software').hide();
-                $('#websites').show();
-                break;
-            case "software":
-                $('#websites-button').removeClass('active');
-                $('#software-button').addClass('active');
-                $('#websites').hide();
-                $('#software').show();
-                break;
-        }
+
     } else {
-        console.log("here");
         $(currentContent).fadeOut('fast', function () {
             var newContent = $("#" + id);
             newContent.addClass("a:active");
@@ -64,4 +50,12 @@ function showContent(id) {
                 break;
         }
     }
+}
+
+function pillSwitcher(pillId, hideId, showId) {
+    var parentPill = $(event.target).parent().attr('id');
+    $('#' + parentPill).addClass('active');
+    $('#' + pillId).removeClass('active');
+    $('#' + hideId).hide();
+    $('#' + showId).show();
 }
