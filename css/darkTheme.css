@@ -26,9 +26,7 @@
 }
 
 .nav-pills a {
-  /*background-color: $primary;*/
   padding: 5px 10px 5px 10px;
-  /*margin: 5px;*/
 }
 
 .nav-pills .active {
@@ -55,6 +53,10 @@
 
 a:focus {
   color: #b44a90;
+}
+
+.nav-active {
+  color: #b44a90 !important;
 }
 
 table {

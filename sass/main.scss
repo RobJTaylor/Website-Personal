@@ -62,9 +62,7 @@ $h1-font-size: $font-size-base * 2.2 !default;
 }
 
 .nav-pills a {
-    /*background-color: $primary;*/
     padding: 5px 10px 5px 10px;
-    /*margin: 5px;*/
 }
 
 .nav-pills .active {
@@ -95,6 +93,10 @@ a {
     &:focus {
       color: $link-hover-color;
     }
+}
+
+.nav-active {
+    color: $link-hover-color !important;
 }
 
 //Table styling
