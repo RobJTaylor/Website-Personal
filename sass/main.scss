@@ -133,9 +133,18 @@ mark {
     z-index: 999;
 }
 
-.header p {
+.header h1 {
     color: $body-color;
     z-index: 999;
+}
+
+.header i {
+    position: fixed;
+    color: $body-color;
+    z-index: 999;
+    right: -30px;
+    top: 12px;
+    font-size: 30px;
 }
 
 .heading h1 {
