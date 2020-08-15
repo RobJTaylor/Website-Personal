@@ -1,10 +1,12 @@
 var currentTheme;
 
+/**
+ * Toggle the website theme (light/dark)
+ */
 function toggleTheme() {
 
     if (!currentTheme) {
         currentTheme = queryTheme();
-        console.log(currentTheme);
     }
 
     var link = document.createElement("link");
@@ -36,6 +38,9 @@ function toggleTheme() {
     document.getElementsByTagName('HEAD')[0].appendChild(link);
 }
 
+/**
+ * Attempt to get the browser theme from media query. Fallback to light theme.
+ */
 function queryTheme() {
     if ( matchMedia('(prefers-color-scheme: dark)').matches ) {
         return "dark";
@@ -44,6 +49,9 @@ function queryTheme() {
     }
 }
 
+/**
+ * Update the moon icon based on current theme
+ */
 window.onload = function() {
     //Set the moon to an outline if we've loaded in light theme
     if (this.queryTheme() == "light") {
