@@ -19,8 +19,8 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -46,7 +46,8 @@
     </div>
     <ul class="nav justify-content-center">
         <li class="nav-item">
-            <h3><a id="about-link" class="nav-link nav-active" href="#a" onclick="showContent('about')">About Me</a></h3>
+            <h3><a id="about-link" class="nav-link nav-active" href="#a" onclick="showContent('about')">About Me</a>
+            </h3>
         </li>
         <li class="nav-item">
             <h3><a id="projects-link" class="nav-link" href="#a" onclick="showContent('projects')">Projects</a></h3>
@@ -66,12 +67,16 @@
                         <i class="fas fa-code"></i>
                     </td>
                     <td>
-                        <p>I'm a <mark>Software Engineer</mark> at <a href="https://www.cognitoiq.com/" alt="Cognito iQ">Cognito iQ</a>.
+                        <p>I'm a Software Engineer at <a href="https://www.cognitoiq.com/" alt="Cognito iQ">Cognito
+                                iQ</a>.
                             I'm
                             passionate about
                             everything
                             to
-                            do with computing and love writing software.</p>
+                            do with computing and love writing software.
+                            You can view my open source projects on GitHub <a href="https://github.com/RobJTaylor"
+                                alt="GitHub profile">here</a>.
+                        </p>
                     </td>
                 </tr>
                 <tr>
@@ -79,7 +84,7 @@
                         <i class="fas fa-gamepad"></i>
                     </td>
                     <td>
-                        <p>I love playing <mark>video games</mark> and have briefly dabbled in game development with
+                        <p>I love playing video games and have briefly dabbled in game development with
                             Unity.</p>
                     </td>
                 </tr>
@@ -88,7 +93,7 @@
                         <i class="fas fa-headphones"></i>
                     </td>
                     <td>
-                        <p>I'm almost always listening to <mark>music</mark>. I've seen some of my favourites live
+                        <p>I'm almost always listening to music. I've seen some of my favourites live
                             including Queen,
                             Green Day and Rise Against.</p>
                     </td>
@@ -98,37 +103,60 @@
 
         <div id="projects">
             <ul class="nav nav-pills justify-content-center">
-                <li id="websites-pill" class="left active"><a id="websites-link" href="#a" onclick="pillSwitcher('software-pill', 'software', 'websites')">Websites</a></li>
-                <li id="software-pill" class="right"><a id="software-link" href="#a" onclick="pillSwitcher('websites-pill', 'websites', 'software')">Software</a></li>
+                <li id="websites-pill" class="left active"><a id="websites-link" href="#a"
+                        onclick="pillSwitcher('software-pill', 'software', 'websites')">Websites</a></li>
+                <li id="software-pill" class="right"><a id="software-link" href="#a"
+                        onclick="pillSwitcher('websites-pill', 'websites', 'software')">Software</a></li>
             </ul>
             <div id="websites">
                 <h3>This Website</h3>
-                <p>This website acts as a space for me to test out the latest web technologies and frameworks. So far, I've implemented:</p>
+                <p>This website acts as a space for me to test out the latest web technologies and frameworks. So far,
+                    I've implemented:</p>
                 <ul>
                     <li><a href="http://sass-lang.com" alt="sass">SASS</a> - Syntactically awesome style sheets</li>
                     <li>Supporting color schemes via "prefers-color-scheme" media queries</li>
                 </ul>
-                <p>You can view the source code on GitHub <a href="https://github.com/RobJTaylor/Website-Personal" alt="website github link">here</a>.
-                I have open-sourced a bunch of previous projects too, which can be found on my <a href="https://github.com/RobJTaylor" alt="github profile">GitHub profile</a>.</p>
+                <p>
+                    I'm using GitHub pages to host this site - due to this, you can view the source code <a
+                        href="https://github.com/RobJTaylor/Website-Personal" alt="website github link">here</a>. The
+                    source code is also stored in GitHub's <a
+                        href="https://github.blog/2020-02-03-the-arctic-code-vault-starts-production-and-your-open-source-projects-are-being-archived/"
+                        alt="Arctic code vault">Arctic code vault</a>.
+                </p>
                 <br />
                 <h3>Karen Coulson's Website</h3>
-                <p>I have re-designed Karen Coulson's personal website, showcasing her art. I used Bootstrap for the basic layout and made some minor modifications using Sass (Syntactically Awesome Style Sheets) in a node project. 
+                <p>I have re-designed Karen Coulson's personal website, showcasing her art. I used Bootstrap for the
+                    basic layout and made some minor modifications using Sass (Syntactically Awesome Style Sheets) in a
+                    node project.
                     PHP was used to ensure Karen could easily update her featured art and gallery pages.</p>
-                <p>This has replaced Karen's old website and is viewable <a href="http://karencoulson.co.uk">here</a>.</p>
+                <p>This has replaced Karen's old website and is viewable <a href="http://karencoulson.co.uk">here</a>.
+                </p>
                 <img class="img-fluid rounded" src="images/karencoulson.png" alt="karencoulson.co.uk" />
             </div>
             <div id="software">
                 <h3>Espresso</h3>
                 <img class="image-small" src="images/Espresso.png" />
-                <p>Espresso is a small application that I made in the summer of 2019. During this time, I was archiving a large number of files, and required my computer to stay awake 24/7.</p>
-                <p>I could simply adjust the Windows power plan to achieve this, but that would be too easy. I set out to create a modern Windows application in the vein of <a href="http://lightheadsw.com/caffeine/" alt="Caffeine">Caffeine</a>.</p>
-                <p>The result of this was Espresso - a modern Windows application using <a href="https://docs.microsoft.com/en-us/windows/apps/desktop/modernize/xaml-islands" alt="XAML Islands">XAML Islands</a> to provide a user interface built on the latest framework by Microsoft.
-                It's a small application that lives in the notification area to provide an experience similar to caffeine.</p>
-                <p>I plan to add more features to Espresso in the future, when WinUI 3.0 is available, as this will remove the dependency on XAML Islands and make maintenance much easier. The current release is available from the <a href="https://www.microsoft.com/store/productId/9P4CXNCJH7T4" alt="Espresso store link">Microsoft Store</a>.</p>
+                <p>Espresso is a small application that I made in the summer of 2019. During this time, I was archiving
+                    a large number of files, and required my computer to stay awake 24/7.</p>
+                <p>I could simply adjust the Windows power plan to achieve this, but that would be too easy. I set out
+                    to create a modern Windows application in the vein of <a href="http://lightheadsw.com/caffeine/"
+                        alt="Caffeine">Caffeine</a>.</p>
+                <p>The result of this was Espresso - a modern Windows application using <a
+                        href="https://docs.microsoft.com/en-us/windows/apps/desktop/modernize/xaml-islands"
+                        alt="XAML Islands">XAML Islands</a> to provide a user interface built on the latest framework by
+                    Microsoft.
+                    It's a small application that lives in the notification area to provide an experience similar to
+                    caffeine.</p>
+                <p>I plan to add more features to Espresso in the future, when WinUI 3.0 is available, as this will
+                    remove the dependency on XAML Islands and make maintenance much easier. The current release is
+                    available from the <a href="https://www.microsoft.com/store/productId/9P4CXNCJH7T4"
+                        alt="Espresso store link">Microsoft Store</a>.</p>
                 <br />
                 <h3>Dissertation</h3>
-                <p>I completed my dissertation project in May 2019. The project was designed to derive multiple apps from a single codebase, and evaluate the development lifecycle.</p>
-                <p>I decided to use React & React Native, which allowed me to pull a web app and Android/iOS apps from the same code. The project was a success, and I graduated with a 2:1 in Software Engineering.</p>
+                <p>I completed my dissertation project in May 2019. The project was designed to derive multiple apps
+                    from a single codebase, and evaluate the development lifecycle.</p>
+                <p>I decided to use React & React Native, which allowed me to pull a web app and Android/iOS apps from
+                    the same code. The project was a success, and I graduated with a 2:1 in Software Engineering.</p>
                 <p>More details are available on request.</p>
                 <img class="img-fluid rounded" src="images/crashbuddy.png" alt="dissertation project" />
             </div>
@@ -139,10 +167,7 @@
             <p>You can get in contact with me through the form below (mailto), or by
                 connecting with me on <a href="https://linkedin.com/in/robtaylor96">LinkedIn</a>.</p>
             <!-- GitHub pages has no PHP support, need to use mailto -->
-            <form id="mailForm"
-            action="mailto:robert.j.taylor117@gmail.com"
-            method="post"
-            enctype="text/plain">
+            <form id="mailForm" action="mailto:robert.j.taylor117@gmail.com" method="post" enctype="text/plain">
                 <div class="form-group">
                     <label for="Name">Name</label>
                     <input type="Name" class="form-control" name="name">
@@ -162,10 +187,12 @@
 
     <!-- Optional JavaScript -->
     <!-- Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

@@ -4,7 +4,10 @@
 # CSS then switches out the files depending on results of media queries
 #
 # I'm not a master of Python, this surely could've been written better.
-# But if it ain't broke, don't fix it.
+#
+# Requires:
+# - Python 3 or above
+# - Sass installed globally (npm install -g sass)
 
 import os
 
@@ -27,16 +30,16 @@ with open('sass/main.scss') as scssFile:
         lightTheme.append(line)
         darkTheme.append(line)
         if "// -- Light styling" in line:
-            print 'Found light start at line: ', num
+            print('\nFound light start at line: ', num)
             lightStart = num
         if "// -- End light" in line:
-            print 'Found light end at line: ', num
+            print('\nFound light end at line: ', num)
             lightEnd = num
         if "// -- Dark styling" in line:
-            print 'Found dark start at line: ', num
+            print('\nFound dark start at line: ', num)
             darkStart = num
         if "// -- End dark" in line:
-            print 'Found dark end at line: ', num
+            print('\nFound dark end at line: ', num)
             darkEnd = num
 
 # Delete range of lines from each list
@@ -44,13 +47,13 @@ del darkTheme[lightStart - 1:lightEnd]
 del lightTheme[darkStart - 1:darkEnd]
 
 # Write lists to files
-with open("sass/lightTheme.scss", "w+") as file:
+with open("sass/lightTheme.scss", "w") as file:
     for line in lightTheme:
-        print >> file, line
+        file.write("%s\n" % line)
 
-with open("sass/darkTheme.scss", "w+") as file:
+with open("sass/darkTheme.scss", "w") as file:
     for line in darkTheme:
-        print >> file, line
+        file.write("%s\n" % line)
 
 # Call sass to generate css files
 print("\nGenerating light css")
