@@ -1,5 +1,0 @@
-/* Fallback for older browsers */
-@import "lightTheme.css";
-/* Change color scheme based on browser preference */
-@import "lightTheme.css" (prefers-color-scheme: light);
-@import "darkTheme.css" (prefers-color-scheme: dark);
